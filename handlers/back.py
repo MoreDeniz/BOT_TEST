@@ -1,10 +1,11 @@
 from aiogram.types import Message, InputFile, CallbackQuery, InputMediaPhoto
 from loader import dp, db
-from keyboards.hjk import menu_main
+from keyboards.callback import menu_main
 from keyboards.inline import kb_main_menu_acro
 from config import system_pictures
 
-@dp.callback_query_handlers(menu_main.filter(button='back'))
+
+@dp.callback_query_handler(menu_main.filter(button='back'))
 async def my_events(call: CallbackQuery):
 
     name = call.message.chat.full_name

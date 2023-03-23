@@ -4,6 +4,11 @@ class DataBase:
 
     def __init__(self, db_path: str = 'data_base/acro_db.db'):
         self.db_path = db_path
+        self.create_table_events()
+        self.create_table_users()
+        self.create_table_locations()
+        self.create_table_acro_events()
+        self.create_table_guest_events()
 
     @property
     def connection(self):
