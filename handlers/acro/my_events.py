@@ -3,7 +3,7 @@ from aiogram.types import Message, InputFile, CallbackQuery, InputMediaPhoto
 
 from handlers.search_navigation import parse_callback
 from loader import dp, db
-from keyboards.hjk import menu_main
+from keyboards.callback import menu_main
 from keyboards.inline import kb_no_events, create_kb_event_navigation
 from config import system_pictures
 # from keyboards import kb_main_menu, main_menu

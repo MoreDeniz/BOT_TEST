@@ -4,7 +4,7 @@ from aiogram.dispatcher import FSMContext
 from states import User
 from keyboards.standart import kb_yes_no, kb_user_role, kb_city_select, kb_cancel
 from keyboards.inline import kb_main_menu_acro
-from keyboards.hjk import menu_search
+from keyboards.callback import menu_search
 from config import system_pictures, admin_promo_code, acro_promo_code
 
 
